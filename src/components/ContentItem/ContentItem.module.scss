@@ -1,0 +1,39 @@
+.contentItem {
+  position: relative;
+  letter-spacing: 2px;
+  img {
+    width: 1900px;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .contentArea {
+    .title {
+      position: absolute;
+      top: 85px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      font-size: 40px;
+    }
+    .subtitle {
+      position: absolute;
+      top: 140px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      font-size: 14px;
+      .subtitleLink {
+        color: #000;
+        text-decoration: underline;
+        margin-left: 2px;
+      }
+    }
+
+    .actionWrapper {
+      display: flex;
+      position: absolute;
+      gap: 50px;
+      left: 50%;
+      bottom: 150px;
+      transform: translate(-50%, 0);
+    }
+  }
+}

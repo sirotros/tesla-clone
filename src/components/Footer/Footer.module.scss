@@ -1,0 +1,16 @@
+.footer{
+    .footerList{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        font-size: 14px;
+        .footerListItem{
+            margin-right: 14px;
+            a{
+                color: black;
+                font-weight: 700;
+            }
+        }
+    }
+}
