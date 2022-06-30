@@ -1,8 +1,9 @@
 .contentItem {
   position: relative;
-  letter-spacing: 2px;
+  // top: -15px;
+  
   img {
-    width: 1900px;
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
   }
@@ -34,6 +35,22 @@
       left: 50%;
       bottom: 150px;
       transform: translate(-50%, 0);
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .contentItem {
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .actionWrapper{
+      flex-direction: column;
+      button{
+        width: 400px;
+        margin: -10px 0;
+      }
     }
   }
 }

@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999999999999;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,6 +12,19 @@
   font-weight: 900;
   line-height: 20px;
   padding: 0 50px;
+
+  .menu {
+    display: none;
+    width: 70px;
+    height: 32px;
+    border-radius: 50px;
+    background-color: #a4a4a4;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+  }
   .navStart {
     .logo {
       width: 100px;
@@ -24,5 +37,19 @@
   .navEnd {
     display: flex;
     gap: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    width: 480px;
+    .menu {
+      display: flex;
+    }
+    .navCenter {
+      display: none;
+    }
+    .navEnd {
+      display: none;
+    }
   }
 }

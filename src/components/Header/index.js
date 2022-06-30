@@ -1,4 +1,3 @@
-import React from "react";
 import s from "./Header.module.scss";
 import logo from "../../assets/tesla-logo.png";
 function Header() {
@@ -7,7 +6,8 @@ function Header() {
       <span className={s.navStart}>
         <img src={logo} alt="logo" className={s.logo} />
       </span>
-      <ul className={s.navCenter}>
+      <p className={s.menu}>Menu</p>
+      <ul className={`${s.navCenter}`}>
         <li className={s.navItem}>Model S</li>
         <li className={s.navItem}>Model 3</li>
         <li className={s.navItem}>Model X</li>
